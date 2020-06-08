@@ -1,6 +1,7 @@
 h1 {
     color: yellow;
     text-align: center;
+    padding-left: 40px;
 }
 
 
@@ -23,6 +24,7 @@ h1 {
 
 p,h2{
     text-align: center;
+    padding-top: 20px;
 }
 
 a{
@@ -32,4 +34,42 @@ a{
 
 body{
     background-color: crimson;
+}
+
+.item{
+    position: relative;
+}
+
+.item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    opacity: 0;
+}
+
+.item:hover p{
+    opacity: 1;
+}
+
+.item:hover img{
+    opacity: 0.33;
+}
+
+.paragraph h1{
+    text-align: left;
+    padding-left: 0%;
+}
+
+.paragraph li{
+    text-align: left;
+    font-size: 25px;
+
+    padding-top: 10px;
+}
+
+.myself p{
+
+    font-size: 20px;
 }
